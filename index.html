@@ -26,40 +26,42 @@
             background-color: #ffcc00; /* Hover background color */
             color: #4B0082 !important; /* Hover text color */
         }
+        .packages-section, .special-offers, .other-services {
+            padding: 40px 0; /* Padding for sections */
+            color: #fff; /* Text color for the sections */
+        }
         .packages-section {
-            padding: 40px 0; /* Padding for the packages section */
             background-color: #6a5acd; /* Rich background color for the packages section */
-            color: #fff; /* Text color for the section */
         }
         .special-offers {
-            padding: 40px 0; /* Padding for the special offers section */
             background-color: #e0e7ff; /* Light background for contrast */
+        }
+        .other-services {
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Text color for other services */
         }
         .form-group label {
             color: #ffcc00; /* Label color */
         }
         .btn-primary {
-            background-color: #ffcc00; /* Search button color */
+            background-color: #ffcc00; /* Button color */
             border: none; /* No border */
         }
         .btn-primary:hover {
             background-color: #ffd700; /* Hover color for the button */
         }
         .card {
-            display: flex; /* Flexbox for layout */
-            flex-direction: row; /* Align items in a row */
-            background-color: #6a5acd; /* Card background color */
-            color: #fff; /* Card text color */
-            transition: transform 0.3s; /* Transition effect */
+            transition: transform 0.3s, background-color 0.3s; /* Transition effect */
             border-radius: 15px; /* Rounded corners */
+            margin: 15px; /* Margin around cards */
         }
         .card:hover {
             transform: scale(1.05); /* Scale up on hover */
+            background-color: #5a4c91; /* Darker color on hover */
         }
-        .card-img-left {
-            width: 40%; /* Image takes up 40% of card */
-            border-radius: 15px 0 0 15px; /* Curvy design on the left */
-            height: auto; /* Maintain aspect ratio */
+        .puzzle-card {
+            overflow: hidden; /* Hide overflow */
+            position: relative; /* Position relative for absolute elements */
         }
         .footer {
             background-color: #4B0082; /* Footer background color */
@@ -139,7 +141,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1525745051396-1d4e9f4b69c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-1.2.1&q=80&w=400" class="card-img-left" alt="Dubai Package">
+                    <img src="https://images.unsplash.com/photo-1563231734-3f32236c7c4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" class="card-img-top" alt="Dubai Package">
                     <div class="card-body">
                         <h5 class="card-title">Dubai Getaway</h5>
                         <p class="card-text">Experience the luxury of Dubai! Exciting adventures await you!</p>
@@ -149,7 +151,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1547034300-7c3f8a45e8ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-1.2.1&q=80&w=400" class="card-img-left" alt="Thailand Package">
+                    <img src="https://images.unsplash.com/photo-1543673282-69b2d36b4c6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" class="card-img-top" alt="Thailand Package">
                     <div class="card-body">
                         <h5 class="card-title">Thailand Escape</h5>
                         <p class="card-text">Unwind in the tropical paradise of Thailand! Book now for great offers!</p>
@@ -159,11 +161,91 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1499205563807-9f6b04802414?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-1.2.1&q=80&w=400" class="card-img-left" alt="Bali Package">
+                    <img src="https://images.unsplash.com/photo-1525147531374-69e6cd1e8c5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" class="card-img-top" alt="Bali Package">
                     <div class="card-body">
                         <h5 class="card-title">Bali Bliss</h5>
                         <p class="card-text">Discover the serene beauty of Bali! Your dream vacation awaits!</p>
                         <a href="#details" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="other-services text-center">
+    <h2 class="mb-4">Other Services</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card puzzle-card" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Adventure</h5>
+                        <p class="card-text">Thrilling adventures await you! Join us!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card puzzle-card" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Trains</h5>
+                        <p class="card-text">Experience the elegance of luxury train travel!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Villas & Stays</h5>
+                        <p class="card-text">Find the perfect villa for your getaway!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cruise</h5>
+                        <p class="card-text">Set sail on a beautiful cruise adventure!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Momentum</h5>
+                        <p class="card-text">Stay ahead with our exclusive travel deals!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Activities</h5>
+                        <p class="card-text">Join fun activities and make unforgettable memories!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Visa Services</h5>
+                        <p class="card-text">Get assistance with visa processing!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Freights</h5>
+                        <p class="card-text">Reliable freight services for your cargo needs!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card puzzle-card" style="height: 175px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gift Vouchers</h5>
+                        <p class="card-text">Give the gift of travel with our vouchers!</p>
                     </div>
                 </div>
             </div>
